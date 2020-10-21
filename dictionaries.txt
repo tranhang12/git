@@ -1,0 +1,71 @@
+cat    con mèo
+Agreement    hợp đồng, giao kèo
+Agree    đồng ý, tán thành
+Assurance    sự chắn chắn
+determine    quyết định, xác định
+engage    tham gia, hứa hẹn
+establish    thiết lập, xác minh
+obligate    bắt buộc
+party    buổi tiệc
+provision    sự dự trữ, điều khoản
+resolve    giải quyết
+specific    riêng biệt, đặc trưng
+attract    hấp dẫn, lôi cuốn
+compare    so sánh, đối chiếu
+consume    tiêu thụ
+convince    thuyết phục
+currently    hiện thời, hiện nay
+fad    sự thích thú tạm thời
+market    thị trường, chợ
+persuasion    sự thuyết phục
+consider    cân nhắc, suy xét
+travel    du lịch
+health    sức khoẻ
+entertainment    giải trí
+personnel    nhân sự
+purchasing    mua bán
+management    issues    quản lý
+aggressive    hung hăng, xông xáo
+active    nhanh nhẹn, năng động
+ambitious    có nhiều tham vọng
+bad-tempered    nóng tính
+boast    khoe khoang
+brave    dũng cảm
+blind    mù quáng
+boring    tẻ nhạt
+careful    cẩn thận
+careless    bất cẩn
+cold    lạnh lùng
+crazy    điên khùng
+childish    ngây ngô
+clever    khéo léo
+diligent    chăm chỉ
+dishonest    bất lương
+difficult    to please khó tính
+dependable    đáng tin cậy
+deceptive    dối trá, lừa lọc
+emotional    dễ xúc động
+funny    vui vẻ
+friendly    thân thiện
+friend    bạn bè
+gentle    nhẹ nhàng
+generous    hào phóng
+hot    nóng
+honest    trung thực
+haughty    kiêu căng
+impolite    bất lịch sự
+introverted    hướng nội
+kind    tử tế
+lazy    lười biếng
+mean    keo kiệt
+nice    tốt, xinh
+naive    ngây thơ
+optimistic    lạc quan
+positive    tiêu cực
+pleasant    dễ chịu
+quiet    ít nói
+smart    lanh lợi
+soft    dịu dàng
+sensitive    nhạy cảm
+tricky    xảo quyệt
+unlovely    khó gần

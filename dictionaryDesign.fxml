@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@hinhnen.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-3.0" layoutY="-7.0" prefHeight="172.0" prefWidth="606.0">
+         <children>
+            <Button fx:id="search" layoutX="210.0" layoutY="138.0" mnemonicParsing="false" onAction="#searchingWord" onMouseClicked="#searchingWord" prefHeight="32.0" prefWidth="80.0" text="Search">
+               <padding>
+                  <Insets left="10.0" right="-20.0" />
+               </padding></Button>
+            <Button layoutX="342.0" layoutY="139.0" mnemonicParsing="false" onAction="#openAddBox" prefHeight="32.0" prefWidth="65.0" text="Add">
+               <padding>
+                  <Insets right="-20.0" />
+               </padding></Button>
+            <Button layoutX="426.0" layoutY="138.0" mnemonicParsing="false" onAction="#openRemoveWord" prefHeight="32.0" prefWidth="71.0" text="Remove">
+               <padding>
+                  <Insets left="20.0" />
+               </padding></Button>
+            <Button layoutX="513.0" layoutY="139.0" mnemonicParsing="false" onAction="#openEditBox" prefHeight="32.0" prefWidth="65.0" text="Edit">
+               <padding>
+                  <Insets left="20.0" />
+               </padding></Button>
+            <TextField fx:id="type" layoutX="6.0" layoutY="138.0" prefHeight="32.0" prefWidth="200.0" />
+            <Text layoutX="221.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dictionary" wrappingWidth="200.0">
+               <font>
+                  <Font name="BrushScript BoldItalic" size="48.0" />
+               </font>
+            </Text>
+            <ImageView blendMode="MULTIPLY" fitHeight="24.0" fitWidth="40.0" layoutX="210.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@233-2339018_search-icon-png-circle-clipart.png" />
+               </image></ImageView>
+            <ImageView blendMode="COLOR_BURN" fitHeight="32.0" fitWidth="43.0" layoutX="342.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pngtree-vector-add-icon-png-image_4143871.jpg" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="DARKEN" fitHeight="24.0" fitWidth="38.0" layoutX="426.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@computer-icons-button-checkbox-delete-dust-bin-erase-eraser-remove-icon.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="24.0" layoutX="519.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@edit.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="426.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/English - Vietnamese/" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="4.0" layoutY="165.0" prefHeight="228.0" prefWidth="195.0">
+         <children>
+            <ListView layoutX="-2.0" prefHeight="228.0" prefWidth="200.0" />
+            <ScrollPane layoutX="-1.0" prefHeight="228.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="meaning" layoutX="209.0" layoutY="206.0" prefHeight="149.0" prefWidth="384.0">
+         <font>
+            <Font name="Times New Roman" size="27.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="addBox" layoutX="143.0" layoutY="111.0" prefHeight="260.0" prefWidth="299.0" visible="false">
+         <children>
+            <ImageView fitHeight="275.0" fitWidth="300.0" pickOnBounds="true">
+               <image>
+                  <Image url="@add.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="195.0" layoutY="212.0" mnemonicParsing="false" onAction="#closeAddBox" prefHeight="25.0" prefWidth="48.0" text="Close" />
+            <Button layoutX="101.0" layoutY="212.0" mnemonicParsing="false" onAction="#saveAddBox" prefHeight="25.0" prefWidth="48.0" text="Save" />
+            <Text layoutX="64.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type English word" textAlignment="CENTER" wrappingWidth="170.5625">
+               <font>
+                  <Font name=".VnArial Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="51.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type VietNamese word">
+               <font>
+                  <Font name=".VnArial Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="addEngWord" layoutX="52.0" layoutY="72.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="addVietWord" layoutX="48.0" layoutY="146.0" prefHeight="25.0" prefWidth="207.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="removeBox" layoutX="155.0" layoutY="105.0" prefHeight="260.0" prefWidth="300.0" visible="false">
+         <children>
+            <ImageView fitHeight="260.0" fitWidth="307.0" pickOnBounds="true">
+               <image>
+                  <Image url="@remove.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="20.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type word you want to delete" wrappingWidth="273.02734375">
+               <font>
+                  <Font name=".VnArial Narrow Bold" size="23.0" />
+               </font>
+            </Text>
+            <Button layoutX="78.0" layoutY="146.0" mnemonicParsing="false" onAction="#removeWordBox" text="Remove">
+               <font>
+                  <Font name=".VnArial" size="12.0" />
+               </font></Button>
+            <Button layoutX="182.0" layoutY="146.0" mnemonicParsing="false" onAction="#closeRemoveBox" prefHeight="25.0" prefWidth="61.0" text="Close" />
+            <TextField fx:id="word_to_delete" layoutX="50.0" layoutY="77.0" prefHeight="25.0" prefWidth="207.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="editBox" layoutX="159.0" layoutY="111.0" prefHeight="260.0" prefWidth="300.0" visible="false">
+         <children>
+            <ImageView fitHeight="260.0" fitWidth="307.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@edit.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="37.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type word you want to edit" textAlignment="CENTER" wrappingWidth="233.24072265625">
+               <font>
+                  <Font name=".VnArial Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="word_to_edit" layoutX="25.0" layoutY="37.0" prefHeight="25.0" prefWidth="251.0" />
+            <TextField fx:id="editNewWord" layoutX="28.0" layoutY="94.0" prefHeight="25.0" prefWidth="251.0" />
+            <TextField fx:id="editNewMean" layoutX="27.0" layoutY="148.0" prefHeight="25.0" prefWidth="251.0" />
+            <Text layoutX="99.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type new word" textAlignment="CENTER">
+               <font>
+                  <Font name=".VnArial Bold" size="15.0" />
+               </font></Text>
+            <Text layoutX="86.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type new meaning">
+               <font>
+                  <Font name=".VnArial Bold" size="15.0" />
+               </font></Text>
+            <Button layoutX="76.0" layoutY="206.0" mnemonicParsing="false" onAction="#saveEditBox" text="Save" />
+            <Button layoutX="181.0" layoutY="206.0" mnemonicParsing="false" onAction="#closeEditBox" text="Close" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
