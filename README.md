@@ -1,2 +1,1 @@
-# git
-Homework
+# Từ điển
